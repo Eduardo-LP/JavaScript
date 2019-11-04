@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>exercicio 5</title>
+    </head>
+    <body>
+        <script>
+            var usuarios = [
+                {
+                    nome: "Diego",
+                    habilidades: ["Javascript", "ReactJS", "Redux"]
+                },
+                {
+                    nome: "Gabriel",
+                    habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+                }
+                ];
+            var frase;
+
+            for(var i = 0; i < 2; i++){
+                frase = "O " + usuarios[i].nome + " possui as habilidades: " + usuarios[i].habilidades.join();
+                console.log(frase);
+            }
+            //join serve como um separador de itens dentro de um array.
+        </script>
+    </body>
+</html>

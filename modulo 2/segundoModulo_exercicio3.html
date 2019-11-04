@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>exercico 3</title>
+        <body>
+            <div id="app"></div>
+            <script>
+                var nomes = ["Diego", "Gabriel", "Lucas"];
+
+                var conteiner = document.getElementById('app');
+                var lista = document.createElement('ul');
+                for(var i = 0; i < 3; i++){
+                    var item = document.createElement('li');
+                    var nome = document.createTextNode(nomes[i]);
+                    item.appendChild(nome);
+                    lista.appendChild(item);
+                }
+                conteiner.appendChild(lista);
+
+            </script>
+        </body>
+    </head>
+</html>

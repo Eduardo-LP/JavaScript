@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>exercico 3</title>
+    </head>
+    <body>
+        <script>
+            function temHabilidade(skills) {
+                var varedura = skills.indexOf("Javascript");
+                if(varedura == 0){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+            var skills = ["Javascript", "ReactJS", "React Native"];
+            var resultado = temHabilidade(skills);
+            console.log(resultado);
+        </script>
+    </body>
+</html>

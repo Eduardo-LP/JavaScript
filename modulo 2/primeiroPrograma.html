@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso de javaScriot</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <button onclick="addQuadrado()">adicionando quadrados</button>
+        </div>
+
+        <script>
+        /*objetivo: Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um quadrado
+vermelho com 100px de altura e largura. Sempre que o botão for clicado um novo quadrado deve
+aparecer na tela.*/
+            function addQuadrado(){
+                //só vale para um elemento ja inserido na dom inicial
+                var conteiner = document.getElementById('app');
+                var caixa = document.createElement('div');
+                caixa.style.width = '100px';
+                caixa.style.height = '100px';
+                caixa.style.backgroundColor = '#f00';
+                caixa.style.margin = '10px';
+                conteiner.appendChild(caixa);
+            }
+        </script>
+    </body>
+</html>
